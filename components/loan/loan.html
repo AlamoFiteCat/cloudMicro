@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>cloudMicrofinance</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="../../style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="d-flex" id="wrapper">
+      <!-- Sidebar -->
+      <div class="bg-light border-right border-info" id="sidebar-wrapper">
+        <div class="sidebar-heading font-weight-bold">
+          <a href="../../index.html"><span class="bg-info p-2 brad-5 text-light">cloud</span
+            ><span class="text-info">Microfinance</span></a>
+        </div>
+        <div class="list-group list-group-flush" id="side-navigation">
+          <a href="../application/application.html" class="list-group-item list-group-item-action bg-light"
+            >Application</a
+          >
+          <a href="#" class="list-group-item list-group-item-action bg-light"
+            >Loan</a
+          >
+          <a href="../payments/payments.html" class="list-group-item list-group-item-action bg-light"
+            >Loan Payment</a
+          >
+          <a
+            class="list-group-item list-group-item-action bg-light dropdown-toggle"
+            href="#registerSubmenu"
+            data-toggle="collapse"
+            aria-expanded="false"
+            class="dropdown-toggle"
+            >Registers</a
+          >
+          <ul class="collapse list-unstyled" id="registerSubmenu">
+            <li>
+              <a
+                href="../city/city.html"
+                class="list-group-item list-group-item-action bg-light"
+                >City</a
+              >
+            </li>
+            <li>
+              <a
+                href="../office/office.html"
+                class="list-group-item list-group-item-action bg-light"
+                >Office</a
+              >
+            </li>
+            <li>
+              <a
+                href="../contact/contact.html"
+                class="list-group-item list-group-item-action bg-light"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <a
+            class="list-group-item list-group-item-action bg-light dropdown-toggle"
+            href="#matureSubmenu"
+            data-toggle="collapse"
+            aria-expanded="false"
+            class="dropdown-toggle"
+            >Mature Loans</a
+          >
+          <ul class="collapse list-unstyled" id="matureSubmenu">
+            <li>
+              <a
+                href="../matureAll/matureAll.html"
+                class="list-group-item list-group-item-action bg-light"
+                >All Loans</a
+              >
+            </li>
+            <li>
+              <a
+                href="../matureSingle/matureSingle.html"
+                class="list-group-item list-group-item-action bg-light"
+                >Single Loan</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--/Sidebar-->
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-info"
+        >
+          <button class="btn btn-info" id="menu-toggle">Navigate</button>
+        </nav>
+
+        <div class="container mt-4">
+          <div class="main-header p-4">
+            <h1 class="text-info d-inline" id="main-title">
+              Loan
+            </h1>
+          </div>
+          <div class="main-body">
+            <div class="main-content">
+              <!--Loan Main-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../app.js"></script>
+    <script src="loan.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+      $('#menu-toggle').click(function(e) {
+        e.preventDefault();
+        $('#wrapper').toggleClass('toggled');
+      });
+    </script>
+  </body>
+</html>

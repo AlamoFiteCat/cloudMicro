@@ -1,0 +1,13 @@
+ JQuery Data Tables
+
+CSS LINK
+ <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+
+ JS LINK
+ <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+
+NEED THIS TO MAKE THE TABLE WORK
+#myTable will be the ID of your table
+ $(document).ready(function () {
+        $('#myTable').DataTable();
